@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.displayFlex{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    overflow: hidden;
+    align-items: center;
+}
+.displayFlex-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 40px;
+    width: 65%;
+}
+.displayFlex-col{
+    display: flex;
+    justify-content: center;
+    width: 85%;
+}
+#header {
+    background-color: #1e1e1e;
+    height: 48px;
+    padding: 0 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+.full-header{
+    width: 100%;
+    height: 48px;
+}
+
+#header .nav{
+    display: flex;
+    text-transform: uppercase;
+}
+#header .nav li{
+    list-style: none;
+}
+#header .nav li a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 48px;
+}
+#header .languge a:hover ,
+#header .nav li:hover a{
+    opacity: 0.6;
+}
+#header .languge{
+    margin-left: 20px;
+}
+#header .languge a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 5px;
+}
+#background{
+    position: relative;
+    height: 1000px;
+    background: center / cover no-repeat url("../img/background/background-1.jpg");
+    z-index: -1;
+}
+#background .background-cap{
+    color: rgb(11, 100, 141);
+    background-color: #fff;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 13px 35px;
+    position: absolute;
+    bottom: 53px;
+    right: 0;
+}
+
+#background .fa-solid{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: downcroll 2s infinite;
+    font-size: 50px;
+    color: #353535;
+    z-index: 10; 
+}
+
+.text-img{
+    height: 200px;
+    align-self: flex-end;
+}
+
+.text-img .pic-img{
+    object-fit: cover;
+    flex: 1;
+    margin-right: 15px;
+}
+.text-img .text-content-right{
+    flex: 2;
+}
+#content{
+    
+}
+
+#content #hot{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#content .displayFlex .header-content {
+    display: flex;
+    border-bottom: 1px solid;
+}
+#content .displayFlex-2 .header-content h1{
+    position: relative;
+    display: inline-block;
+}
+#content .displayFlex-2 .header-content h1::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 110%;
+    height: 1px;
+    background: #000;
+}
+#content .displayFlex-2 .text-content{
+    padding: 15px 0 30px 0;
+    align-self: flex-end;
+    width: 85%;
+    line-height: 1.6;
+    font-size: 18px;
+}
+#content .displayFlex-2 img{
+    width: 100%;
+    object-fit: cover;
+}
+/* hiệu ứng paraslap */
+.background-slider {
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-slider-1{
+    background-image: url("https://www.t-treasureislands.metro.tokyo.lg.jp/en/tokyoislandsspirits/background/img/shaanxi_mosquitoes.jpg");
+}
+.background-slider-2{
+    background-image: url("https://www.t-treasureislands.metro.tokyo.lg.jp/en/tokyoislandsspirits/background/img/shimazake_toranomon.jpg");
+}
+#new{
+    
+}
+
+#tuors{
+    
+}
+
+#introduce{
+    
+}
+
+#blog{
+    
+}
+
+#help{
+    
+}
+
+#fooder{
+    
+}
+
+
+/* animation
+/* down-scroll */
+@keyframes downcroll{
+    to{
+        opacity: 1;
+        bottom: 5px;
+    }
+}
